@@ -1,0 +1,91 @@
+body{
+   text-align: center;
+   font-size: 130%;
+   background-image: url("edogawa/image/wat.png");
+   background-repeat:  no-repeat;
+   background-position:50% 0%;
+}
+.mark{
+   text-align: center;
+   padding-top: 10%;
+}
+ul{
+   list-style: none;
+   padding-left: 0;
+}
+.menu {
+    width: 85%;
+    margin:0 auto;
+    text-align:center;
+ }
+ 
+ .menu img {
+    width:55%;
+    margin:auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+ }
+
+ .menu {
+    margin: auto;
+ }
+
+ /*矢印の設定*/
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 35%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid rgb(85, 84, 88);/*矢印の色*/
+     border-right: 2px solid rgb(85, 84, 88);/*矢印の色*/
+     height: 40px;
+     width: 40px;
+     z-index: 9999;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+    text-align: center;
+ }
+
+ .slick-dots ul {
+    margin: auto;
+ }
+
+ .slick-dots li {
+    display:inline-block;
+    margin:0px;
+    width: 50px;
+    height: 50px;
+ }
+ 
+ .slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 3px;/*ドットボタンのサイズ*/
+    height:15px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:rgb(255, 255, 255);/*ドットボタンの色*/
+    border-color:rgb(85, 84, 88);
+    box-shadow: none;
+ }
+ 
+ .slick-dots .slick-active button{
+    background:rgb(85, 84, 88);/*ドットボタンの現在地表示の色*/
+ }
+ 
+
