@@ -1,3 +1,4 @@
+@media screen and (min-width:961px){
 body{
     text-align: center;
     font-size: 130%;
@@ -21,8 +22,45 @@ ul{
 }
 
 h1{
-    padding-top: 12%;
-    font-size: 130%;
+    padding-top: 5%;
+    font-size: 240%;
+}
+a{
+    font-size: 200%;
+}
+img{
+    width: 30%;
+    height: auto;
+}
 }
 
+
+
+@media screen and (max-width:960px){
+    body{
+        text-align: center;
+        font-size: 130%;
+    }
+    li{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    body{
+        text-align: center;
+        font-size: 130%;
+        background-image: url("edogawa/image/back.png");
+        background-size: 80%;
+        background-repeat:  no-repeat;
+        background-position:50% 0%;
+    }
+    
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    h1{
+        padding-top: 12%;
+        font-size: 130%;
+    }}
 

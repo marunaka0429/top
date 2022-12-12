@@ -1,3 +1,83 @@
+@media screen and (min-width:961px){
+   body{
+      text-align: center;
+   }
+  img{
+     width: 30%;
+     height: auto;
+     padding-left: 37%;
+     padding-bottom: 10%;
+     
+  }
+  h2{
+     font-size: 550%;
+  }
+  p{
+     font-size: 400%;
+  }
+  .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 35%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid rgb(85, 84, 88);/*矢印の色*/
+     border-right: 2px solid rgb(85, 84, 88);/*矢印の色*/
+     height: 40px;
+     width: 40px;
+     z-index: 9999;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+    left: 10%;
+    transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+    right: 10%;
+    transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+    text-align: center;
+ }
+
+ .slick-dots ul {
+    margin: auto;
+ }
+
+ .slick-dots li {
+    display:inline-block;
+    margin:0px;
+    width: 50px;
+    height: 50px;
+ }
+ 
+ .slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 22px;/*ドットボタンのサイズ*/
+    height:25px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:rgb(255, 255, 255);/*ドットボタンの色*/
+    border-color:rgb(85, 84, 88);
+    box-shadow: none;
+ }
+ 
+ .slick-dots .slick-active button{
+    background:rgb(85, 84, 88);/*ドットボタンの現在地表示の色*/
+ }
+}
+
+
+
+
+
+
+@media screen and (max-width: 960px){
 body{
    text-align: center;
    font-size: 130%;
@@ -87,5 +167,5 @@ ul{
  .slick-dots .slick-active button{
     background:rgb(85, 84, 88);/*ドットボタンの現在地表示の色*/
  }
- 
+}
 
