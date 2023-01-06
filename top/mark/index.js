@@ -7,3 +7,12 @@ $('.menu').slick({
     nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
     dots: true,
 });
+
+liff.init({ liffId: "1657153787-A6PXyx7z" })
+.then(() => {
+    if (!liff.isLoggedIn()) {
+        liff.login();
+    } else {
+        document.getElementById('title').textContent = 'ログイン済み';
+    }
+})
